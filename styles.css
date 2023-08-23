@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Adjusted to fit neumorphism */
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+               -5px -5px 15px rgba(255, 255, 255, 0.7); /* Neumorphic design */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers horizontally since the direction is column */
+    padding: 20px 50px;
+    background-color: #002244;
+    color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+               -5px -5px 15px rgba(255, 255, 255, 0.7); /* Neumorphic design */
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 5px; 
+}
+
+nav {
+    width: 100%; /* Ensures it spans the full width of its container */
+    display: flex;
+    justify-content: center; /* This centers the items horizontally */
+    margin-top: 20px;  /* Provides space between the title and the navigation */
+}
+
+nav a {
+    flex: 1; /* Causes each link to take up an equal amount of space */
+    text-align: center;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1), 
+               -3px -3px 10px rgba(255, 255, 255, 0.7); /* Neumorphic design */
+}
+
+nav a:hover {
+    color: #007BFF;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), 
+                inset -2px -2px 4px rgba(255, 255, 255, 0.7); /* Pressed effect on hover */
+}
+
+.container a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #002244;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+               -5px -5px 15px rgba(255, 255, 255, 0.7); /* Neumorphic design */
+}

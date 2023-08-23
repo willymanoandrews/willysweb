@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WillysWebsites | Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>WillysWebsites</h1>
+        
+    </div>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Contact Me</h2>
+    <p>If you're interested in working together or have any questions, feel free to reach out!</p>
+    <p>Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+
+    <!-- Contact Form -->
+    <section class="contact-form-box">
+        <div class="contact-form-container">
+            <h3>Send a Message</h3>
+            <form action="/server.js" method="post"> <!-- Update the action attribute -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2023 WillysWebsites. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
