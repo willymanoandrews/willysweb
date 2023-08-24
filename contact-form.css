@@ -6,6 +6,7 @@
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), 
                -5px -5px 15px rgba(255, 255, 255, 0.7);
+    margin: 20px 0;
 }
 
 .contact-form-box h3 {
@@ -16,30 +17,40 @@
 .contact-form-container form {
     display: flex;
     flex-direction: column;
+    gap: 1rem;  /* Instead of using margin for spacing */
 }
 
 .contact-form-container label {
-    margin-top: 10px;
+    font-size: 1rem;  /* Bigger fonts for mobile readability */
 }
 
 .contact-form-container input,
 .contact-form-container textarea {
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;  /* Bigger fonts for mobile readability */
+    width: 100%; /* Ensures input takes full width */
 }
 
 .contact-form-container button {
-    padding: 10px 20px;
+    padding: 12px 20px; /* Slightly larger padding for easier touch */
     background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1rem;  /* Bigger fonts for better readability */
 }
 
 .contact-form-container button:hover {
     background-color: #0056b3;
+}
+
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 600px) {
+    .contact-form-container textarea {
+        min-height: 150px;  /* A taller textarea for mobile */
+    }
 }
